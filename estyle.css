@@ -79,3 +79,310 @@ body {
         padding-bottom: 10px;
     }
 }
+
+/* Sección General */
+.section-tarot {
+    padding: 80px 0;
+    background-color: #fffaf5; /* Un color crema muy suave */
+}
+
+.container-tarot {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    padding: 0 20px;
+}
+
+/* Texto */
+.tarot-content {
+    flex: 1;
+}
+
+.subtitle {
+    text-transform: uppercase;
+    color: #a38b5d; /* Dorado suave */
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 0.8rem;
+}
+
+.tarot-content h2 {
+    font-family: 'Georgia', serif;
+    font-size: 2.5rem;
+    color: #4a148c; /* Violeta espiritual */
+    margin: 10px 0 20px;
+}
+
+.tarot-content p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.tarot-features {
+    list-style: none;
+    margin-bottom: 30px;
+}
+
+.tarot-features li {
+    margin-bottom: 10px;
+    font-weight: 500;
+    color: #333;
+}
+
+/* Botón */
+.btn-primary {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #7b1fa2;
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #4a148c;
+    box-shadow: 0 4px 15px rgba(123, 31, 162, 0.3);
+}
+
+/* Imagen */
+.tarot-image {
+    flex: 1;
+}
+
+.tarot-image img {
+    width: 100%;
+    border-radius: 20px; /* Bordes redondeados para suavidad */
+    box-shadow: 20px 20px 0px #e0d5c1; /* Decoración estilo puente */
+}
+
+/* Adaptación para móviles */
+@media (max-width: 768px) {
+    .container-tarot {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    
+    .tarot-features {
+        display: inline-block;
+        text-align: left;
+    }
+}
+
+/* Sección Biodecodificación */
+.section-bio {
+    padding: 100px 0;
+    background-color: #ffffff;
+}
+
+.container-bio {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    padding: 0 20px;
+}
+
+/* Imagen a la izquierda (orden inverso al tarot para dar ritmo) */
+.bio-image {
+    flex: 1;
+}
+
+.bio-image img {
+    width: 100%;
+    border-radius: 50% 50% 0 0; /* Forma de arco/puente */
+    filter: sepia(20%); /* Tono más cálido/orgánico */
+}
+
+/* Contenido */
+.bio-content {
+    flex: 1.2;
+}
+
+.subtitle-bio {
+    color: #2d5a27; /* Verde bosque suave (vida/biología) */
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.bio-content h2 {
+    font-family: 'Georgia', serif;
+    font-size: 2.5rem;
+    color: #1b3022;
+    margin: 15px 0;
+}
+
+/* Tarjetas internas de beneficios */
+.bio-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin: 25px 0;
+}
+
+.bio-card {
+    background: #f4f9f4;
+    padding: 15px;
+    border-left: 4px solid #2d5a27;
+    border-radius: 4px;
+}
+
+.bio-card strong {
+    display: block;
+    color: #2d5a27;
+    margin-bottom: 5px;
+}
+
+.bio-card p {
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+/* Botón secundario */
+.btn-secondary {
+    display: inline-block;
+    padding: 12px 35px;
+    border: 2px solid #2d5a27;
+    color: #2d5a27;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+
+.btn-secondary:hover {
+    background-color: #2d5a27;
+    color: white;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .container-bio {
+        flex-direction: column;
+        text-align: center;
+    }
+    .bio-cards {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* Sección Sobre Mí */
+.section-about {
+    padding: 100px 0;
+    background-color: #fcfaf7; /* Fondo neutro cálido */
+    overflow: hidden;
+}
+
+.container-about {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    padding: 0 20px;
+}
+
+/* Texto */
+.about-content {
+    flex: 1.2;
+}
+
+.subtitle-about {
+    color: #8e44ad; /* Color del logo para identidad */
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 0.9rem;
+}
+
+.about-content h2 {
+    font-family: 'Georgia', serif;
+    font-size: 2.8rem;
+    color: #333;
+    margin: 10px 0 25px;
+}
+
+.intro-text {
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #5d4037;
+    margin-bottom: 20px;
+    line-height: 1.4;
+}
+
+.about-content p {
+    color: #666;
+    margin-bottom: 15px;
+}
+
+/* Iconos de valores */
+.about-values {
+    display: flex;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.value {
+    text-align: center;
+}
+
+.value .icon {
+    font-size: 1.5rem;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.value p {
+    font-size: 0.85rem;
+    font-weight: bold;
+    color: #4a148c;
+    text-transform: uppercase;
+}
+
+/* Imagen con decoración */
+.about-image-wrapper {
+    flex: 1;
+    position: relative;
+    z-index: 1;
+}
+
+.profile-img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    position: relative;
+    z-index: 2;
+}
+
+.img-decoration {
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    width: 100%;
+    height: 100%;
+    border: 3px solid #e0d5c1;
+    border-radius: 15px;
+    z-index: 1;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .container-about {
+        flex-direction: column;
+        text-align: center;
+        gap: 40px;
+    }
+    
+    .about-values {
+        justify-content: center;
+    }
+
+    .img-decoration {
+        display: none; /* Simplificamos en móvil */
+    }
+}
